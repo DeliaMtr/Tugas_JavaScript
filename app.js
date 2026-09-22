@@ -26,8 +26,7 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 
 // TODO 1: Tulis satu baris console.log() untuk memastikan file app.js sudah terhubung!
 // Contoh output: "Skrip app.js berhasil terhubung!"
-
-
+console.log(" Javascript Terhubung!");
 
 
 // ============================================================
@@ -37,7 +36,9 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // ---- BAGIAN 2A: VARIABEL IDENTITAS KEDAI KOPI ----
 // TODO 2A:
 // 1. Buat konstanta "NAMA_KEDAI" bertipe string (misal: "Kopi PSTI Kampus").
+
 // 2. Buat variabel "namaKasir" (misal: "Kak Eko") dan "shiftKerja" menggunakan "let".
+
 // 3. Cetak nilai NAMA_KEDAI, namaKasir, dan shiftKerja ke Console menggunakan console.log().
 
 
