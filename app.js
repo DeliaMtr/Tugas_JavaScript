@@ -22,12 +22,10 @@
 // AKTIVITAS 1: Setup Berkas & Integrasi JavaScript Eksternal
 // ============================================================
 // Menampilkan judul sistem ke tab Console (F12)
-console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
-
+const NAMA_KEDAI = "Kopi PSTI Kampus";
 // TODO 1: Tulis satu baris console.log() untuk memastikan file app.js sudah terhubung!
 // Contoh output: "Skrip app.js berhasil terhubung!"
-console.log(" Javascript Terhubung!");
-
+console.log("Javascript Terhubung!");
 
 // ============================================================
 // AKTIVITAS 2: Variabel & Dialog Interaktif
@@ -36,40 +34,57 @@ console.log(" Javascript Terhubung!");
 // ---- BAGIAN 2A: VARIABEL IDENTITAS KEDAI KOPI ----
 // TODO 2A:
 // 1. Buat konstanta "NAMA_KEDAI" bertipe string (misal: "Kopi PSTI Kampus").
-const NAMA_KEDAI = "Coffe Lune";
+const NAMA_KEDAI = "Coffee Lune";
 // 2. Buat variabel "namaKasir" (misal: "Kak Eko") dan "shiftKerja" menggunakan "let".
-let nama_kasir = "Kang Heru";
+let namaKasir = "Kang Haru";
 // 3. Cetak nilai NAMA_KEDAI, namaKasir, dan shiftKerja ke Console menggunakan console.log().
-console.log("Nama Kasir Awal : " + nama_kasir);
+console.log("Nama Kasir Awal : " + namaKasir);
 
 
 // ---- DEMO PERBEDAAN LET vs CONST ----
 // TODO 2B:
 // Ubah (re-assign) nilai variabel "namaKasir" dengan nama kasir lain,
-nama_kasir = "Kang Haru";
+namaKasir = "Kang Heru";
 // lalu cetak ke Console untuk membuktikan bahwa variabel "let" nilainya dapat diubah.
-console.log("Nama Kasir Setelah Diubah : " + nama_kasir);
-
+console.log("Nama Kasir Setelah Diubah : " + namaKasir);
 
 
 // ---- BAGIAN 2B: INPUT INTERAKTIF & PENGANDAIAN DASAR ----
 // TODO 2C:
 // 1. Tampilkan pop-up salam pembuka selamat datang menggunakan alert().
-alert("Selamat Datang di "NAMA_KEDAI + "\nSistem Poin & Keanggotaan ");
+alert(
+     "Selamat Datang di " +
+     NAMA_KEDAI +
+     "!\nSistem Poin & Keanggotaan Member"
+ );
 // 2. Tampilkan dialog prompt() untuk meminta nama pengunjung, simpan hasilnya ke variabel "namaPelanggan".
-let nama_pelanggan = prompt("Haloow! Silahkan Masukkan Nama Kamu:");
+let namaPelanggan = prompt(
+     "Halo! Masukkan nama pelanggan untuk memulai:"
+ );
 // 3. Gunakan percabangan "if - else":
 //    - JIKA namaPelanggan ada isinya: tampilkan alert sapaan dan log ke console.
 //    - JIKA namaPelanggan kosong / klik Cancel: beri nilai default "Pelanggan Setia" dan tampilkan alert pemberitahuan.
-if (nama_pelanggan) {
-    //jika user mengisi nama:
-    alert(" Haloo, " + nama_pelanggan + "Selamat Datang Di Coffe Lune");
-    console.log("Nama Pelanggan: " + nama_mahasiswa);
-} else {
-    // jika user tidak mengisi nama (kosong) maka ia akan dipanggil anonim
-    alert(Selamat Datang, Luners);
-    console.log("Nama Pelanggan : " + nama_pelanggan);
-}
+if (namaPelanggan) {
+     alert(
+         "Halo, " +
+         namaPelanggan +
+         "! Selamat berbelanja di " +
+         NAMA_KEDAI +
+         "."
+     );
+
+     console.log("Nama Pelanggan : " + namaPelanggan);
+
+ } else {
+     namaPelanggan = "Pelanggan Setia";
+     alert(
+         "Nama tidak dimasukkan.\n" +
+         "Kami akan menggunakan nama default: " +
+         namaPelanggan
+     );
+
+     console.log("Nama Pelanggan : " + namaPelanggan);
+ }
 
 
 // ============================================================
@@ -80,18 +95,19 @@ if (nama_pelanggan) {
 // TODO 3:
 // 1. Buat 3 variabel poin transaksi: "poinKopi", "poinMakanan", dan "poinMerchandise"
 //    (isi dengan angka bulat bebas, misal: 45, 35, 20).
-let poinKopi = 30;
+let poinKopi = 45;
 let poinMakanan = 35;
 let poinMerchandise = 20;
 // 2. Buat variabel "totalPoin" yang menjumlahkan ketiga variabel poin di atas.
-let total_poin = poinKopi + poinMakanan + poinMerchandise;
+let totalPoin = poinKopi + poinMakanan + poinMerchandise;
 // 3. Cetak rincian perolehan poin dan totalPoin ke Console menggunakan console.log().
+console.log("");
 console.log("=== RINCIAN PEROLEHAN POIN ===");
-console.log("Pelanggan        : " + nama_pelanggan);
+console.log("Pelanggan        : " + namaPelanggan);
 console.log("Poin Kopi        : " + poinKopi);
 console.log("Poin Makanan     : " + poinMakanan);
 console.log("Poin Merchandise : " + poinMerchandise);
-console.log("Total Poin       : " + total_poin);
+console.log("Total Poin       : " + totalPoin);
 
 
 
