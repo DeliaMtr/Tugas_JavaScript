@@ -207,10 +207,8 @@ console.log("Tier       : " + tierPelangganB);
 // Buktikan bahwa fungsi di atas bisa dipakai ulang (reusable):
 // 1. Hitung total poin dan tentukan tier untuk simulasi Pelanggan B (misal poin: 35, 25, 20).
 let pelangganB = "Pelanggan B";
-let totalPoinB =
-    hitungTotalPoin(30, 25, 20);
-let tierPelangganB =
-    tentukanTierMember(totalPoinB);
+let totalPoinB = hitungTotalPoin(30, 25, 20);
+let tierPelangganB = tentukanTierMember(totalPoinB);
 
 // 2. Hitung total poin dan tentukan tier untuk simulasi Pelanggan C (misal poin: 15, 10, 5).
 let pelangganC = "Pelanggan C";
