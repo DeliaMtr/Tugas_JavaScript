@@ -22,7 +22,7 @@
 // AKTIVITAS 1: Setup Berkas & Integrasi JavaScript Eksternal
 // ============================================================
 // Menampilkan judul sistem ke tab Console (F12)
-const NAMA_KEDAI = "Kopi PSTI Kampus";
+console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // TODO 1: Tulis satu baris console.log() untuk memastikan file app.js sudah terhubung!
 // Contoh output: "Skrip app.js berhasil terhubung!"
 console.log("Javascript Terhubung!");
@@ -37,6 +37,7 @@ console.log("Javascript Terhubung!");
 const NAMA_KEDAI = "Coffee Lune";
 // 2. Buat variabel "namaKasir" (misal: "Kak Eko") dan "shiftKerja" menggunakan "let".
 let namaKasir = "Kang Haru";
+let shiftKerja = "Sift Sore"
 // 3. Cetak nilai NAMA_KEDAI, namaKasir, dan shiftKerja ke Console menggunakan console.log().
 console.log("Nama Kasir Awal : " + namaKasir);
 
@@ -118,27 +119,67 @@ console.log("Total Poin       : " + totalPoin);
 
 // TODO 4:
 // 1. Buat variabel "tierMember" dan "benefit" bertipe string kosong ("").
-// 2. Gunakan percabangan "if - else if - else" berdasarkan nilai "totalPoin":
-//    - totalPoin >= 100 : tierMember = "Platinum", benefit = "Diskon 20% + Gratis 1 Minuman Signature"
-//    - totalPoin >= 70  : tierMember = "Gold", benefit = "Diskon 10% di setiap transaksi"
-//    - totalPoin >= 40  : tierMember = "Silver", benefit = "Diskon 5% untuk menu minuman"
-//    - selain itu       : tierMember = "Bronze", benefit = "Member Reguler (kumpulkan poin untuk naik tier)"
-// 3. Cetak hasil tierMember dan benefit ke Console.
-// 4. Tampilkan ringkasan hasil member (nama, total poin, tier, benefit) via dialog alert().
+// let tierMember = "";
+// let benefitMember = "";
+// // 2. Gunakan percabangan "if - else if - else" berdasarkan nilai "totalPoin":
+// //    - totalPoin >= 100 : tierMember = "Platinum", benefit = "Diskon 20% + Gratis 1 Minuman Signature"
+// //    - totalPoin >= 70  : tierMember = "Gold", benefit = "Diskon 10% di setiap transaksi"
+// //    - totalPoin >= 40  : tierMember = "Silver", benefit = "Diskon 5% untuk menu minuman"
+// //    - selain itu       : tierMember = "Bronze", benefit = "Member Reguler (kumpulkan poin untuk naik tier)"
+// if (totalPoin >= 100) {
+//      tierMember = "Platinum";
+//      benefitMember = "Diskon 20% + Gratis 1 Minuman Signature";
+
+//  } else if (totalPoin >= 70) {
+//      tierMember = "Gold";
+//      benefitMember = "Diskon 10% di setiap transaksi";
+//  } else if (totalPoin >= 40) {
+//      tierMember = "Silver";
+//      benefitMember = "Diskon 5% untuk menu minuman";
+//  } else {
+//      tierMember = "Bronze";
+//      benefitMember = "Member Reguler";
+//  }
+// // 3. Cetak hasil tierMember dan benefit ke Console.
+// console.log("");
+// console.log("=== STATUS MEMBERSHIP ===");
+// console.log("Nama Member : " + namaPelanggan);
+// console.log("Total Poin  : " + totalPoin);
+// console.log("Tier Member : " + tierMember);
+// console.log("Benefit     : " + benefitMember);
+// // 4. Tampilkan ringkasan hasil member (nama, total poin, tier, benefit) via dialog alert().
+// alert(
+//      "=== RINGKASAN MEMBER ===\n\n" +
+//      "Nama       : " + namaPelanggan + "\n" +
+//      "Total Poin : " + totalPoin + "\n" +
+//      "Tier       : " + tierMember + "\n" +
+//      "Benefit    : " + benefitMember
+// );
 
 
+// // ============================================================
+// // AKTIVITAS 5: Function — Membuat Fungsi yang Bisa Dipakai Ulang
+// // ============================================================
 
+// // TODO 5A:
+// // Buat fungsi "hitungTotalPoin(p1, p2, p3)" yang menerima 3 parameter nilai poin,
+// function hitungTotalPoin(p1, p2, p3) {
+//      let total = p1 + p2 + p3;
+//      return total;
+// }
 
-// ============================================================
-// AKTIVITAS 5: Function — Membuat Fungsi yang Bisa Dipakai Ulang
-// ============================================================
-
-// TODO 5A:
-// Buat fungsi "hitungTotalPoin(p1, p2, p3)" yang menerima 3 parameter nilai poin,
-// menjumlahkannya, dan mengembalikan (return) nilai total penjumlahannya.
-
-
-
+// // menjumlahkannya, dan mengembalikan (return) nilai total penjumlahannya.
+// function tentukanTierMember(poin) {
+//      if (poin >= 100) {
+//          return "Platinum";
+//      } else if (poin >= 70) {
+//          return "Gold";
+//      } else if (poin >= 40) {
+//          return "Silver";
+//      } else {
+//          return "Bronze";
+//      }
+// }
 
 // TODO 5B:
 // Buat fungsi "tentukanTierMember(poin)" yang menerima 1 parameter nilai poin,
