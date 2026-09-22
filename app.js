@@ -22,7 +22,7 @@
 // AKTIVITAS 1: Setup Berkas & Integrasi JavaScript Eksternal
 // ============================================================
 // Menampilkan judul sistem ke tab Console (F12)
-console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
+console.log("=== SISTEM POIN MEMBER COFFEE LUNE ===");
 // TODO 1: Tulis satu baris console.log() untuk memastikan file app.js sudah terhubung!
 // Contoh output: "Skrip app.js berhasil terhubung!"
 console.log("Javascript Terhubung!");
@@ -206,9 +206,9 @@ console.log("Tier       : " + tierPelangganB);
 // TODO 5C:
 // Buktikan bahwa fungsi di atas bisa dipakai ulang (reusable):
 // 1. Hitung total poin dan tentukan tier untuk simulasi Pelanggan B (misal poin: 35, 25, 20).
-let pelangganB = "Pelanggan B";
-let totalPoinB = hitungTotalPoin(30, 25, 20);
-let tierPelangganB = tentukanTierMember(totalPoinB);
+ pelangganB = "Pelanggan B";
+ totalPoinB = hitungTotalPoin(30, 25, 20);
+ tierPelangganB = tentukanTierMember(totalPoinB);
 
 // 2. Hitung total poin dan tentukan tier untuk simulasi Pelanggan C (misal poin: 15, 10, 5).
 let pelangganC = "Pelanggan C";
